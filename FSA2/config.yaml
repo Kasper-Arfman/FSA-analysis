@@ -1,0 +1,565 @@
+measurements:
+  # 240801_dd7_FL:
+  #   FL10nM:
+  #     02_MpARF2FL_10nM_dd7_1:
+  #       exclude:
+  #         - roi_2.tif  # DNA filter
+  #         - roi_6.tif  # DNA filter
+  #         - roi_8.tif  # DNA filter
+  # 240902_Lam_FL:
+  #   FL_10nM:
+  #     flush_ALEX_561m25_642m25_ms100-200:
+  # 240919_Lam_DM:
+  #   Bleach:
+  #     ALEX_DNA_lambda_bleach_542nm50_561nm30_exp50ms_int100ms_1:
+  #   DM_1nM:
+  #     flush_ALEX_642m20_561m30_ms50-100:
+  #     wash_ALEX_642m25_561m30_ms50-100:
+  #     wash_ALEX_642m30_561m30_ms50-100:
+  #     wash_ALEX_642m30_561m30_ms50-100_2:
+  #     wash_ALEX_642m35_561m30_ms50-100:
+  #   DM_4nM:
+  #     flush_ALEX_642m20_561m30_ms50-100:
+  #     slow_wash_ALEX_642m20_561m20_ms50-100:
+  #     wash_ALEX_642m15_561m30_ms50-100:
+  #     wash_ALEX_642m25_561m30_ms50-100:
+  #     wash_ALEX_642m30_561m30_ms50-100:
+  #   DM_7nM:
+  #     flush_ALEX_642m20_561m30_ms50-100:
+  #     wash_ALEX_642m15_561m30_ms50-100:
+  #     wash_ALEX_642m25_561m30_ms50-100:
+  #     wash_ALEX_642m30_561m30_ms50-100:
+  #     wash_ALEX_642m35_561m30_ms50-100:
+  #     wash_ALEX_642m40_561m30_ms50-100:
+  #     wash_ALEX_642m50_561m30_ms50-100:
+  #   DM_10nM:
+  #     flush_ALEX_642m20_561m30_ms50-100:
+  #     wash_ALEX_642m05_561m30_ms50-100:
+  #     wash_ALEX_642m10_561m30_ms50-100:
+  #     wash_ALEX_642m15_561m30_ms50-100:
+  #     wash_ALEX_642m20_561m30_ms50-100:
+  #     wash_ALEX_642m25_561m30_ms50-100:
+  #     wash_ALEX_642m25_561m30_ms50-100_2:
+  #     wash_ALEX_642m30_561m30_ms50-100:
+  #   DNA_only:
+  #     DNA_lambda_561nm30_exp50ms_2:
+  #   KCl_250mM_DM_5mM:
+  #     flush_ALEX_542m20_561m30_ms50-100_1:
+  #     flush_ALEX_542m20_561m30_ms50-100_3:
+  #     wash_ALEX_542m20_561m30_ms50-100:
+  #   KCl_500mM_DM_5mM:
+  #     flush_ALEX_542m20_561m30_ms50-100:
+  #     wash_ALEX_542m20_561m30_ms50-100:
+  # 240920_Lam_DM:
+  #   DM_5nM_HD_10:
+  #     flush_ALEX_642m20_561m30_ms50-100:
+  #   DM_5nM_no_HD:
+  #     flush_ALEX_642m15_561m30_ms50-100:
+  #     no_DM_ALEX_642m15_561m30_ms50-100:
+  #     wash_ALEX_642m15_561m30_ms50-100:
+  #   DM_10nM_HD_10:
+  #     flush_ALEX_642m20_561m30_ms50-100:
+  #     wash_ALEX_642m10_561m30_ms50-100:
+  #     wash_ALEX_642m20_561m30_ms50-100:
+  #   DM_10nM_no_HD:
+  #     flush_ALEX_642m15_561m30_ms50-100:
+  #     no_DM_ALEX_642m15_561m30_ms50-100:
+  #     no_DM_ALEX_642m20_561m30_ms50-100:
+  #     wash_ALEX_642m15_561m30_ms50-100:
+  #   DNA_only:
+  #     DNA_only_561m30:
+  # 240925_dd7_DM:
+  #   DM_1nM:
+  #     flush_ALEX_642m20_561m30_ms50-100_2:
+  #   DM_4nM:
+  #     flush_ALEX_642m12_561m30_ms50-100:
+  #   DM_10nM:
+  #     flush_ALEX_642m12_561m30_ms50-100:
+  # 240926_dd3_DM:
+  #   # DM_1nM:  
+  #   #   flush_ALEX_642m20_651m30_ms50-100:  # out of focus
+  #   #     ti: None
+  #   #     tf: None
+  #   DM_5nM:
+  #     flush_ALEX_642m20_651m30_ms50-100:
+  #       ti: 76
+  #       tf: 150
+  #       exclude:
+  #         - roi_7.tif  # odd shape
+  #         - roi_8.tif  # odd shape
+  #         - roi_13.tif  # unstable length detection
+  #         - roi_22.tif  # odd shape
+  #   DM_10nM:
+  #     flush_ALEX_642m20_651m30_ms50-100:
+  #       ti: 115
+  #       tf: 165
+  #       exclude:
+  #         - roi_3.tif  # overlap
+  #         - roi_8.tif  # odd shape
+  #         - roi_12.tif  # odd shape
+  #         - roi_13.tif  # odd shape
+  #         - roi_14.tif  # unstable length detection
+  #         - roi_16.tif  # failed detection
+  #         - roi_28.tif  # failed detection
+  #         - roi_56.tif  # failed detection
+  #         - roi_58.tif  # odd shape
+  #         - roi_64.tif  # failed detection
+  #         - roi_65.tif  # odd shape
+  # 240927_dd3_DM:
+  #   KCl_150mM_DM_10nM:
+  #     flush_ALEX_561m25_642m16_ms50-100:
+  #       ti: 45
+  #       tf: 955
+  #       exclude:
+  #         - roi_0.tif  # overlap
+  #         - roi_4.tif  # failed detection
+  #         - roi_5.tif  # overlap
+  #         - roi_7.tif  # overlap
+  #         - roi_8.tif  # failed detection
+  # 241002_dd3_FL:
+  #   FL_1nM:
+  #     flush_ALEX_642m20_561m20_ms50-100:
+  #       # ti: 65  # 90
+  #       ti: 90
+  #       tf: 260
+  #       exclude:
+  #         - roi_9.tif   # too short
+  #         - roi_11.tif  # weird angle
+  #         - roi_13.tif  # odd shape
+  #         - roi_14.tif  # weird angle
+  #         - roi_21.tif  # glitches
+  #         # - roi_26.tif  # background artifact
+  #   FL_5nM:
+  #     flush_ALEX_642m18_561m20_ms50-100:
+  #       ti: 65
+  #       tf: 400
+  #       exclude:
+  #         - 
+  #   FL_10nM:
+  #     flush_ALEX_642m16_561n20_ms50-100:
+  #       ti: 65
+  #       tf: 660  # flow seems to gradually drop
+  # 241016_dd3_FL:
+  #   FL_10nM_no_HD:
+  #     flush_ALEX_561m20_642m20_ms50-100_1:
+  #       ti: 100
+  #       tf: 450  # early cutoff because lengths are decreasing
+  #       exclude:
+  #         - roi_1.tif  # overlap
+  #         - roi_6.tif  # failed DNA detection
+  #         - roi_13.tif  # failed DNA detection
+  #         - roi_14.tif  # failed DNA detection
+  #         - roi_15.tif  # failed DNA detection
+  #         - roi_16.tif  # failed DNA detection
+  #         - roi_17.tif  # weird shape
+  #         - roi_18.tif  # weird shape
+  #         - roi_21.tif  # weird shape
+  #         - roi_23.tif  # glitch at start
+  #         - roi_24.tif  # failed detection
+  #         - roi_28.tif  # failed detection
+  #         - roi_29.tif  # odd shape
+  #         - roi_30.tif  # odd shape
+  #         - roi_31.tif  # failed detection
+  #         - roi_32.tif  # failed detection
+  #         - roi_33.tif  # overlap
+  #         - roi_41.tif  # overlap
+  #         - roi_46.tif  # overlap
+  #         - roi_49.tif  # overlap
+  # 241017_Lam_FL:
+  #   FL_10nM_HD_10:
+  #     flush_ALEX_561m20_642m16_ms50-100_1:
+  #     wash_ALEX_561m20_642m16_ms50-100_1:
+  #   FL_10nM_no_HD:
+  #     flush_ALEX_561m20_642m16_ms50-100_1:
+  #     incu_10min_ALEX_561m20_642m16_ms50-100_1:
+  # 241017_dd3_FL:
+  #   FL_10nM_KCl_150mM:
+  #     flush_ALEX_561m20_642m16_ms50-100_1:
+  #       ti: 115
+  #       tf: 600
+  #       exclude:
+  #         - roi_3.tif  # odd shape
+  #         - roi_9.tif  # weird shape
+  #         - roi_13.tif  # weird shape
+  #         - roi_24.tif  # failed detection
+  #         - roi_29.tif
+  #         - roi_38.tif  # failed detection
+  #         - roi_39.tif  # unstable detection
+  #         - roi_40.tif  # odd shape
+  #         - roi_41.tif  # odd shape
+  #         - roi_42.tif  # unstable detection
+  #         - roi_46.tif  # odd shape
+  #   FL_10nM_KCl_500mM:
+  #     flush_ALEX_561m20_642m16_ms50-100_1:
+  #   FL_10nM_KCl_1000mM:
+  #     flush_ALEX_561m20_642m16_ms50-100_1:
+  #     flush_FOV_change_ALEX_561m20_642m16_ms50-100_1:
+  #     wash_FOV_change_ALEX_561m20_642m16_ms50-100_1:
+  # 241018_Lam_DM:
+  #   DM_10nM_KCl150mM:
+  #     flush_ALEX_561m20_642m16_ms50-100_2:
+  #     incu_10min_ALEX_561m20_642m16_ms50-100_1:
+  #     incu_10min_ALEX_561m20_642m16_ms50-100_2:
+  #   DM_10nM_KCl500mM:
+  #     flush_ALEX_561m20_642m16_ms50-100_1:
+  #   DM_10nM_KCl1000mM:
+  #     flush_ALEX_561m20_642m16_ms50-100_1:
+  #     wash_ALEX_561m20_642m16_ms50-100_1:
+  # 241021_dd3_DM:
+  #   DM_10nM_no_HD:
+  #     flush_ALEX_561m16_642m16_ms50-100_1:
+  #       ti: 70
+  #       tf: 1260
+  #       exclude:
+  #         - roi_1.tif
+  #         - roi_11.tif  # detection glitches
+  #         - roi_13.tif  # odd shape
+  #         - roi_14.tif  # odd shape
+  #         - roi_15.tif  # overlap
+  #         - roi_16.tif  # odd shape
+  #         - roi_21.tif  # overlap
+  #         - roi_22.tif  # overlap
+  #         - roi_24.tif  # SNR
+  # 241023_Lam_DBD:
+  #   DBD_10nM:
+  #     flush_ALEX_561m12_642m25_ms50-100_1:
+  #     incu_10min_ALEX_561m12_642m25_ms50-100_1:
+  #   DBD_10nM_KCl_1000mM:
+  #     flush_ALEX_561m12_642m25_ms50-100_1:
+  #   DBD_100nM:
+  #     incu_10min_ALEX_561m12_642m25_ms50-100_1:
+  # 241025_Lam_FL:
+  #   FL_1nM:
+  #     flush_ALEX_561m12_642m20_ms50-100_1:
+  #   FL_10nM:
+  #     flush_ALEX_561m12_642m12_ms50-100_1:
+  # 241028_dd3_FL:
+  #   FL_5nM_KCl_150mM:
+  #     flush_ALEX_561m12_642m16_ms50-100_1:
+  #       ti: 75
+  #       tf: 1275
+  #       exclude:
+  #         - roi_2.tif  # detection glytches
+  #         - roi_3.tif  # odd shape
+  #         - roi_4.tif
+  #         - roi_6.tif  # failed detection
+  #         - roi_8.tif  # detection fails
+  #         - roi_9.tif  # failed detection
+  #         - roi_12.tif  # idk
+  #         - roi_13.tif  # failed detection
+  #         - roi_14.tif  # overlap
+  #         - roi_15.tif  # overlap
+  #         - roi_16.tif  # overlap
+  #         - roi_23.tif  # overlap
+  #         # - roi_26.tif  # bit long but seems fine
+  #         - roi_27.tif  # overlap
+  #         - roi_28.tif  # odd shape
+  #         - roi_32.tif  # breakage
+  #         - roi_33.tif  # odd shape
+  #         - roi_35.tif  # overlap
+  #         - roi_36.tif  # odd shape
+  #         - roi_39.tif  # overlap
+  #         - roi_40.tif  # overlap
+  #         - roi_41.tif  # overlap
+  #         - roi_43.tif  # overlap
+  #         - roi_44.tif  # overlap
+  # 241029_dd3_DM:
+  #   DM_1nM:
+  #     flush_ALEX_561m12_642m16_ms50-100_1:
+  #       ti: 50
+  #       tf: 1200
+  #       # exclude:
+  #         # - roi_0.tif  # bit glitchy
+  #         # - roi_1.tif  # bit glitchy
+  #         # - roi_5.tif  # overlap
+  #         # - 
+  #   DM_5nM:
+  #     flush_ALEX_561m14_642m16_ms50-100_1:
+  #       ti: 55
+  #       tf: 250
+  #       exclude:
+  #         - roi_4.tif  # overlap
+  #   DM_10nM:
+  #     flush_ALEX_561m14_642m14_ms50-100_1:
+  #       ti: 50
+  #       tf: 200
+  #       exclude:
+  #         - roi_3.tif  # overlap
+  # 241030_Lam_DM:
+  #   DM_20nM:
+  #     FRAP_642m300_ALEX_561m12_642m16_ms50-100_1:
+  #     flush_ALEX_561m12_642m16_ms50-100_1:
+  #     incu_10min_ALEX_561m12_642m16_ms50-100_1:
+  #     incu_10min_ALEX_561m12_642m16_ms50-100_2:
+  #   KCl_1000mM:
+  #     wash_ALEX_561m12_642m16_ms50-100_1:
+  # 241101_dd7_FL:
+  #   FL_10nM:
+  #     flush_ALEX_561m12_642m12_ms50-100_2:
+  #       exclude:
+  #         - roi_9.tif
+  # 241105_Lam_FL:
+  #   FL_1nM_9mL:
+  #     flush_ALEX_561m12_642m12_ms50-200_4:
+  #     flush_ALEX_561m12_642m12_ms50-200_5:
+  #   FL_1nM_9mL_gravity:
+  #     flush_ALEX_561m12_642m12_ms50-200_3:
+  # 241106_Lam_FL:
+  #   FL_2nM_pressure:
+  #     flush_ALEX_561m12_642m16_ms50-200_1:
+  #   KCl_1000mM:
+  #     wash_ALEX_561m12_642m16_ms50-200_1:
+  # 241115_Lam_FL:
+  #   FL_2M:
+  #     FRAP_642m500_ALEX_561m16_642m20_ms50-200_1:
+  #     flush_ALEX_561m16_642m20_ms50-200_2:
+  #     incu_10min_ALEX_561m16_642m20_ms50-200_1:
+  # 241118_Lam_FL:
+  #   FL_5nM:
+  #     flush_ALEX_561m16_642m16_ms50-200_1:
+  #   FL_5nM_KCl_150mM:
+  #     wash_ALEX_561m20_642m16_ms50-200_1:
+  #   FL_5nM_KCl_1000mM:
+  #     flush_ALEX_561m20_642m16_ms50-200_1:
+  # 241118_Lam_FL_noPEG:
+  #   FL_1nM:
+  #     flush_ALEX_561m16_642m16_ms50-200_1:
+  #   FL_5nM:
+  #     flush_ALEX_561m20_642m16_ms50-200_1:
+  #   FL_5nM_HD_10:
+  #     flush_ALEX_561m22_642m16_ms50-200_1:
+  #     wash_ALEX_561m22_642m16_ms50-200_1:
+  # 241119_Lam_DP:
+  #   DP_10nM:
+  #     Flush_ALEX_561m16_642m20_ms50-100_1:
+  #     incu_10min_ALEX_561m16_642m12_ms50-100_1:
+  #     wash_ALEX_561m16_642m12_ms50-100_1:
+  #   DP_100pM:
+  #     flush_ALEX_561m16_642m12_ms50-100_1:
+  # 241120_Lam_DP:
+  #   DP_10nM:
+  #     flush_ALEX_561m16_642m20_ms50-100_1:
+  #     incu_10min_ALEX_561m16_642m20_ms50-100_1:
+  #     wash_ALEX_561m16_642m20_ms50-100_2:
+  # 241121_Lam_DM:
+  #   DM_10nM:
+  #     flush_ALEX_561m20_642m20_ms50-100_1:
+  # 241122_Lam_FL:
+  #   FL_1nM:
+  #     flush_ALEX_561m16_642m16_ms50-200_1:
+  # 250110_Lam_FL:
+  #   FL_100pM:
+  #     flush_ALEX_642m16_561m18_ms50-100_1:
+  #   FL_7nM:
+  #     flush_ALEX_642m16_561m18_ms50-100_1:
+  # 250113_Lam_FL:
+  #   FL_3nM:
+  #     flush_ALEX_642m16_561m18_ms50-100_1:
+  #     incu_10min_ALEX_642m16_561m18_ms50-100_1:
+  #     incu_10min_ALEX_642m16_561m18_ms50-100_2:
+  #   FL_4nM:
+  #     flush_ALEX_642m16_561m18_ms50-100_1:
+  #     flush_ALEX_642m16_561m18_ms50-100_2:
+  #     incu_10min_ALEX_642m16_561m18_ms50-100_1:
+  #     wash_ALEX_642m16_561m18_ms50-100_1:
+  # 250116_Lam_FL:
+  #   FL_3nM:
+  #     POV1_ALEX_642m16_651m16_ms50-100_1:
+  #     POV2_ALEX_642m16_651m16_ms50-100_1:
+  #     POV3_ALEX_642m16_651m16_ms50-100_1:
+  #     POV4_ALEX_642m16_651m16_ms50-100_1:
+  #     POV5_ALEX_642m16_651m16_ms50-100_1:
+  #     flush_ALEX_642m16_651m16_ms50-100_1:
+  #   FL_7nM:
+  #     POV1_ALEX_642m16_651m16_ms50-100_1:
+  #     POV2_ALEX_642m16_651m16_ms50-100_1:
+  #     POV3_ALEX_642m16_651m16_ms50-100_1:
+  #     POV4_ALEX_642m16_651m16_ms50-100_1:
+  #     flush_ALEX_642m16_651m16_ms50-100_1:
+  #     wash_ALEX_642m16_651m16_ms50-100_1:
+  250120_Lam_FL:
+  #   FL_0nM:
+  #     flush_ALEX_642m16_651m16_ms50-100_1:
+  #     POV1_ALEX_642m16_651m16_ms50-100_1:
+  #       exclude:
+  #       - 'roi_7.tif'  # Poor SNR
+  #       - 'roi_9.tif'  # Poor SNR
+  #     POV2_ALEX_642m16_651m16_ms50-100_1:
+    FL_1nM:
+      # flush_ALEX_642m16_651m16_ms50-100_1:
+      # POV1_ALEX_642m16_651m16_ms50-100_1:
+        # exclude:
+        #   # - 'roi_3.tif'
+        #   - 'roi_6.tif'  # ?
+        #   - 'roi_11.tif'
+        #   - 'roi_12.tif' # ?
+        #   - 'roi_15.tif' # ?
+      POV2_ALEX_642m16_651m16_ms50-100_1:
+      POV3_ALEX_642m16_651m16_ms50-100_1:
+  #   FL_2nM: 
+  #     flush_ALEX_642m16_651m16_ms50-100_1:
+  #     POV1_ALEX_642m16_651m16_ms50-100_1: # Nothing
+  #       exclude:
+  #         - 'roi_2.tif'  # coverage fails
+  #         - 'roi_3.tif'  # overlapping strands
+  #         # - 'roi_5.tif'  # works but needs to reposition to center
+  #         - 'roi_7.tif'  # poor SNR
+  #         - 'roi_8.tif'  # overlap and needs reposition
+  #         # - 'roi_9.tif'  # works but needs reposition
+  #         - 'roi_11.tif'
+  #     POV2_ALEX_642m16_651m16_ms50-100_1:
+  #       exclude:
+  #         # - 'roi_2'  # works but needs repositioning
+  #         - roi_5.tif  # weird DNA gets tracked incorrectly
+  #     POV3_ALEX_642m16_651m16_ms50-100_1:
+  #       exclude:
+  #         - 'roi_0.tif'  # fails to get tracked
+  #         - 'roi_3.tif'  # fails to get tracked
+  #         - 'roi_6.tif'  # tracking fails despite data quality seems ok.
+  #         - 'roi_10.tif'  # fails to get tracked
+  #   FL_3nM:
+  #     flush_ALEX_642m16_651m16_ms50-100_1:  # Nothing
+  #     POV1_ALEX_642m16_651m16_ms50-100_1:  # Quite a lot
+  #       exclude:
+  #        - roi_1.tif
+  #        - roi_4.tif
+  #        - roi_5.tif
+  #        - roi_6.tif
+  #        - roi_7.tif
+  #        - roi_11.tif
+  #     POV2_ALEX_642m16_651m16_ms50-100_1:  # Quite a lot
+  #     POV3_ALEX_642m16_651m16_ms50-100_1:
+  #       exclude:
+  #        - roi_2.tif
+  #        - roi_5.tif
+  #   FL_4nM:
+  #     flush_ALEX_642m16_651m16_ms50-100_1:  # A little
+  #     POV1_ALEX_642m16_651m16_ms50-100_1:  # Quite a lot
+  #       exclude:
+  #         - 'roi_6.tif'
+  #     POV2_ALEX_642m16_651m16_ms50-100_1: # Quite a lot
+  #       exclude:
+  #         - roi_2.tif
+  #     POV3_ALEX_642m16_651m16_ms50-100_1: # All DNA is stuck
+  #       exclude:
+  #         - 
+  #   FL_5nM:
+  #     flush_ALEX_642m16_651m16_ms50-100_1:
+  #     POV1_ALEX_642m16_651m16_ms50-100_2:
+  #     POV2_ALEX_642m16_651m16_ms50-100_1:
+  #       exclude:
+  #         - roi_4.tif
+  #     POV3_ALEX_642m16_651m16_ms50-100_1:
+  #       exclude:
+  #         - roi_0.tif
+  #         - roi_2.tif
+  #   FL_6nM:
+  #     flush_ALEX_642m16_651m16_ms50-100_1:
+  #     POV1_ALEX_642m16_651m16_ms50-100_1:
+  #       exclude:
+  #         - roi_2.tif  # weird thing
+  #     POV2_ALEX_642m16_651m16_ms50-100_1:
+  #       exclude:
+  #         # - roi_1.tif
+  #         - roi_2.tif
+  #         - roi_4.tif
+  #     POV3_ALEX_642m16_651m16_ms50-100_1:
+  #   FL_7nM:
+  #     flush_ALEX_642m16_651m16_ms50-100_1:
+  #     POV1_ALEX_642m16_651m16_ms50-100_1:
+  #       exclude:
+  #         - roi_0.ti
+  #         - roi_1.tif
+  #         - roi_4.tif  # a few missing frames
+  #     POV2_ALEX_642m16_651m16_ms50-100_1:
+  #       exclude:
+  #         - roi_2.tif
+  #         - roi_3.tif
+  #     POV3_ALEX_642m16_651m16_ms50-100_1:
+  #       exclude:
+  #         -
+  #   FL_8nM_chip2:
+  #     flush_ALEX_642m16_651m16_ms50-100_1:
+  #     POV1_ALEX_642m16_651m16_ms50-100_1:
+  #     POV2_ALEX_642m16_651m16_ms50-100_1:
+  #     POV3_ALEX_642m16_651m16_ms50-100_1:
+  #   FL_9nM_chip2:
+  #     flush_ALEX_642m16_651m16_ms50-100_1:
+  #     POV1_ALEX_642m16_651m16_ms50-100_1:
+  #     POV2_ALEX_642m16_651m16_ms50-100_1:
+  #     POV3_ALEX_642m16_651m16_ms50-100_1:
+  #   FL_10nM_chip2:
+  #     flush_ALEX_642m16_651m16_ms50-100_1:
+  #     POV1_ALEX_642m16_651m16_ms50-100_1:
+  #     POV2_ALEX_642m16_651m16_ms50-100_1:
+  #     POV3_ALEX_642m16_651m16_ms50-100_1:
+  #     POV4_ALEX_642m16_651m16_ms50-100_1:
+  #     POV5_ALEX_642m16_651m16_ms50-100_1:
+  # 250124_Lam_FL:
+  #   FL_5nM_KCl_150mM:
+  #     flush_ALEX_642m16_561m18_ms50-100_1:
+  #   FL_5nM_KCl_300mM:
+  #     flush_ALEX_642m16_561m18_ms50-100_1:
+  #   FL_5nM_KCl_450mM:
+  #     flush_ALEX_642m16_561m20_ms50-100_1:
+  #   FL_5nM_KCl_600mM:
+  #     flush_ALEX_642m16_561m20_ms50-100_1:
+  #     wash_ALEX_642m16_561m22_ms50-100_1:
+
+
+bundles:
+  # Lambda_FL_0nM:
+  #   250120_Lam_FL/FL_0nM/POV1_ALEX_642m16_651m16_ms50-100_1:  # ?
+  #   250120_Lam_FL/FL_0nM/POV2_ALEX_642m16_651m16_ms50-100_1:  # ?
+  Lambda_FL_1nM:
+  #   250120_Lam_FL/FL_1nM/POV1_ALEX_642m16_651m16_ms50-100_1:  # Nothing
+    250120_Lam_FL/FL_1nM/POV2_ALEX_642m16_651m16_ms50-100_1:
+    250120_Lam_FL/FL_1nM/POV3_ALEX_642m16_651m16_ms50-100_1:
+  # Lambda_FL_2nM:
+  #   250120_Lam_FL/FL_2nM/POV1_ALEX_642m16_651m16_ms50-100_1:  # Nothing
+  #   250120_Lam_FL/FL_2nM/POV2_ALEX_642m16_651m16_ms50-100_1:
+  #   250120_Lam_FL/FL_2nM/POV3_ALEX_642m16_651m16_ms50-100_1:
+  # Lambda_FL_3nM:
+  #   250120_Lam_FL/FL_3nM/POV1_ALEX_642m16_651m16_ms50-100_1:  # Quite a lot
+  #   250120_Lam_FL/FL_3nM/POV2_ALEX_642m16_651m16_ms50-100_1:  # Quite a lot
+  #   250120_Lam_FL/FL_3nM/POV3_ALEX_642m16_651m16_ms50-100_1:
+  # Lambda_FL_4nM:
+  #   250120_Lam_FL/FL_4nM/POV1_ALEX_642m16_651m16_ms50-100_1:  # Quite a lot
+  #   250120_Lam_FL/FL_4nM/POV2_ALEX_642m16_651m16_ms50-100_1:  # Quite a lot
+  #   250120_Lam_FL/FL_4nM/POV3_ALEX_642m16_651m16_ms50-100_1:
+  # Lambda_FL_5nM:
+  #   250120_Lam_FL/FL_5nM/POV1_ALEX_642m16_651m16_ms50-100_2:
+  #   250120_Lam_FL/FL_5nM/POV2_ALEX_642m16_651m16_ms50-100_1:
+  #   250120_Lam_FL/FL_5nM/POV3_ALEX_642m16_651m16_ms50-100_1:
+  # Lambda_FL_6nM:
+  #   250120_Lam_FL/FL_6nM/POV1_ALEX_642m16_651m16_ms50-100_1: # 
+  #   250120_Lam_FL/FL_6nM/POV2_ALEX_642m16_651m16_ms50-100_1:
+  #   250120_Lam_FL/FL_6nM/POV3_ALEX_642m16_651m16_ms50-100_1:
+  # Lambda_FL_7nM:
+  #   250120_Lam_FL/FL_7nM/POV1_ALEX_642m16_651m16_ms50-100_1:
+  #   250120_Lam_FL/FL_7nM/POV2_ALEX_642m16_651m16_ms50-100_1:
+  #   250120_Lam_FL/FL_7nM/POV3_ALEX_642m16_651m16_ms50-100_1:
+  # dd3_FL:
+  #   241002_dd3_FL\FL_1nM\flush_ALEX_642m20_561m20_ms50-100:
+  #   241002_dd3_FL\FL_5nM\flush_ALEX_642m18_561m20_ms50-100:
+  #   241016_dd3_FL\FL_10nM_no_HD\flush_ALEX_561m20_642m20_ms50-100_1:
+  #   241017_dd3_FL\FL_10nM_KCl_150mM\flush_ALEX_561m20_642m16_ms50-100_1:
+  #   241028_dd3_FL\FL_5nM_KCl_150mM\flush_ALEX_561m12_642m16_ms50-100_1:
+  # dd7_FL:
+  #   240801_dd7_FL\FL10nM\02_MpARF2FL_10nM_dd7_1:
+  #   241101_dd7_FL\FL_10nM\flush_ALEX_561m12_642m12_ms50-100_2:
+
+
+datasets:
+  Lambda_FL_concentration:
+    # Lambda_FL_0nM:
+    Lambda_FL_1nM:
+  #   Lambda_FL_2nM:
+  #   Lambda_FL_3nM:
+  #   Lambda_FL_4nM:
+  #   Lambda_FL_5nM:
+  #   Lambda_FL_6nM:
+  #   Lambda_FL_7nM:
+  # kb12_FL:
+  #   dd3_FL:
+  #   dd7_FL:
